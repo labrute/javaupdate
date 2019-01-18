@@ -25,9 +25,12 @@ public class JavaEightImpl implements JavaEight {
         cars.add(new Car("Audi", "A8", 250.0, 340));
     }
 
-    // On veut récupérer une liste de propriétés a partir d'une liste de voitures
+    /**
+     * Lambda et Stream
+     */
     @Override
     public void simpleOperation() {
+        // On veut récupérer une liste de propriétés à partir d'une liste de voitures
         // Java 7 + Apache
         Collection<Double> speeds = CollectionUtils.collect(cars, new Transformer<Car, Double>() {
             public Double transform(Car car) {
@@ -48,9 +51,12 @@ public class JavaEightImpl implements JavaEight {
         cars.stream().map(Car::getModel).forEach(System.out::println);
     }
 
-    // On veut récupérer une liste de marque / model de voiture sans doublon et trié par ordre alphabetique
+    /**
+     * Lambda et Stream
+     */
     @Override
     public void complexOperation() {
+        // On veut récupérer une liste de marque / model de voiture sans doublon et triée par ordre alphabetique
         // Java 7
         Set<String> brands = new HashSet<>();
         for (Car car : cars) {
@@ -85,7 +91,9 @@ public class JavaEightImpl implements JavaEight {
         return pow;
     }
 
-
+    /**
+     * Optional : Encapsulation d'objet pouvant être null
+     */
     @Override
     public Integer getMaxPowerJava8(Car car){
        return Optional

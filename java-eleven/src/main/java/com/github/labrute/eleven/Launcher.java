@@ -19,12 +19,17 @@ public class Launcher {
         example.inferenceTypeAndLambda();
 
         // A voir aussi :
-        // Nouvelle API HTTP
         // Support de Unicode 10.0.0
-        // ZGC amélioration du garbage collector
-        // Chiffement ChaCha20 Poly1305 TLS 1.3
+        /* ZGC
+            Amélioration du garbage collector
+            https://www.opsian.com/blog/javas-new-zgc-is-very-exciting/
+         */
+        /* Chiffement
+            ChaCha20 Poly1305 TLS 1.3
+            https://openjdk.java.net/jeps/329
+         */
         // Suppression module JAVA EE, CORBA
-        // moteur JavaScript Nashorn déprécié
+        // Moteur JavaScript Nashorn déprécié
         // pack200, unpack200 dépréciés
         // Dynamic Class-File Constants
         // Toutes les infos http://openjdk.java.net/jeps/0

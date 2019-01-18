@@ -9,6 +9,9 @@ import java.util.List;
 
 public class JavaTenImpl implements JavaTen {
 
+    /*
+     * Typage implicite
+     */
     @Override
     public void typeInference() {
         // Java 9

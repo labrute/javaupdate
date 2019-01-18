@@ -44,15 +44,39 @@ public class Launcher {
         System.out.println(JavaEight.takeACar(car1));
         JavaEight.takeACar(car3);
 
-        // A voir aussi :
-        // Date Time API
-        // Interfaces fonctionnelles
-        // Annotation de type (@Target, @Encrypted ...)
-        // Nashorn (interpréteur JavaScript)
-        // Adder, Accumulator
-        // StampedLock
-        // Parallel Streams
-        // CompletableFuture (Chainage de taches asynch)
+        // #################### A voir aussi ####################
+        /* Date Time API :
+            Combler les lacunes de java.util.date et calendar
+            Plus d'info et d'exemple : https://www.baeldung.com/java-8-date-time-intro
+         */
+        /* Interfaces fonctionnelles :
+            Permet de définir une interface disposant d'une unique méthode abstraite (sans impl)
+            Plus d'info et d'exemple : https://blog.ippon.fr/2014/03/18/java-8-interfaces-fonctionnelles/
+         */
+        /* Annotation de type (@Target, @Encrypted ...)
+            But : Renforcer le typage et de ce fait, renforcer les verification à la compil
+            Plus d'info et d'exemple : https://dzone.com/articles/java-8-type-annotations
+         */
+        /* Nashorn (interpréteur JavaScript)
+            Digne successeur de Rhino, il est basé sur ECMAScript-262 et implémenté entierement en Java
+            Plus d'info et d'exemple : https://winterbe.com/posts/2014/04/05/java8-nashorn-tutorial/
+         */
+        /* Adder, Accumulator
+            Arrive en remplacement de Atomic (ex : AtomicLong) en ajoutant les notion de lock-free et thread-safe
+            Plus d'info et d'exemple : https://www.baeldung.com/java-longadder-and-longaccumulator
+         */
+        /* StampedLock
+            Support du lock en lecture eciture, corrige les lacunes de ReentrantReadWriteLock
+            Plus d'info et d'exemple : https://dzone.com/articles/a-look-at-stampedlock
+         */
+        /* Parallel Streams
+            Permet l'appel en parallèle de méthode lors du traitement d'un stream (ex : appel ascynchrone, utilisation intensive du CPU)
+            Plus d'info et d'exemple : https://dzone.com/articles/think-twice-using-java-8
+         */
+        /* CompletableFuture (
+            Souvent utilisé pour le chainage de taches asynch
+            Plus d'info et d'exemple : https://www.baeldung.com/java-completablefuture
+         */
         // Et bien d'autre : Base 64, Comparator, Read & Write file,
     }
 }
